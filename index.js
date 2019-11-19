@@ -16,7 +16,7 @@ function format(seconds){
   var app = express();
   
   app.get("/", function (request, response) {
-    // your request //
+  
   
     response.sendStatus(200);
   });
