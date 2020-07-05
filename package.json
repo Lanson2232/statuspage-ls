@@ -1,6 +1,6 @@
 {
   "name": "statuspage-ls",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "a module for simple status pages...",
   "main": "index.js",
   "scripts": {
