@@ -47,8 +47,9 @@ cpuStat.usagePercent(function(err, percent, seconds) {
     uptime = process.uptime()
     id = osi.hostname();
   var up =  format(uptime); 
-  var used = process.memoryUsage().heapUsed / 1024 / 1024;
-  ram = Math.round(used * 100) / 100;
+  const rams = os.totalmem() - os.freemem();
+  ram = Math.floor(rams / 1024);
+  console.log(ram)
   platform = os.platform();
   cpupr = percent.toFixed(2);
 cpum = osi.cpus().map(i => i.model)[0];
@@ -61,6 +62,7 @@ var cpuCount = os.cpuCount();
           cpum:cpum,
           cpuc:cpuCount,
           ram:ram,
+          tRam:os.totalmem(),
           uptime:up,
           id:id,
           platform:platform
