@@ -16,7 +16,7 @@
   "author": "Bünyamin Öztürk & Atilla Kurtuluş Şimşek",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "cpu-stat": "^2.0.1",
     "express": "^4.17.1",
     "os-utils": "0.0.14",
